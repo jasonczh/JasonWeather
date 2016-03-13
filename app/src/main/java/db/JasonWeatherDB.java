@@ -38,7 +38,7 @@ public class JasonWeatherDB {
     }
 
     public synchronized static JasonWeatherDB getInstance(Context context){
-        if(jasonWeatherDB!=null){
+        if(jasonWeatherDB==null){
             jasonWeatherDB=new JasonWeatherDB(context);
         }
         return jasonWeatherDB;
